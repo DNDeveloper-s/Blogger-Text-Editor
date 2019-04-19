@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cloud.tinymce.com/5/tinymce.min.js"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
+</head>
+<body>
+  <textarea>Next, use our Get Started docs to setup Tiny!</textarea>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CKEditor</title>
+  <script src="./js/ckeditor/ckeditor.js"></script>
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <nav>
+      <ul>
+        <li>
+          <img src="./images/logo_talantia.png" alt="">
+        </li>
+        <li>
+          <img src="./images/hola-logo-line.png" alt="">
+        </li>
+        <li>
+          <img src="./images/logo_cymatic.png" alt="">
+        </li>
+        <div class="nav-right">
+          <li><a href="">LOGIN</a></li>
+          <li></li>
+          <li><a href="">SIGN UP</a></li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="title_bar">
+    <h3 class="name">Saurabh Singh</h3>
+    <h3 class="post">Post</h3>
+    <input type="text" name="" id="post_title" placeholder="Post title">
+    <div class="user">
+      <img src="" alt="" class="user_img">
+      <p class="user_text">Posting as <strong>lrcs</strong></p>
+    </div>
+    <button class="publish">Publish</button>
+    <button class="save btn">Save</button>
+    <button class="preview btn">Preview</button>
+    <button class="close btn">Close</button>
+  </div>
+
+  <div class="side_bar">
+    <li class="drop-down"><p>Post settings</p>
+      <ul class="drop-down_list">
+        <li class="list_item">Labels</li>
+        <li class="list_item">Schedule</li>
+        <li class="list_item">Permalink</li>
+        <li class="list_item">Location</li>
+        <li class="list_item">Options</li>
+      </ul>
+    </li>
+  </div>
+
+  <div class="textContainer">
+      <textarea name="editor1"></textarea>
+  </div>
+  <!-- <textarea name="editor1"></textarea> -->
+
+
+  <script>
+    CKEDITOR.replace('editor1', {
+      skin: 'moono-lisa,/js/ckeditor/skins/moono-lisa/'
+    });
+
+    const postSettingsBtn = document.querySelector('.drop-down');
+    const postSettingsList = document.querySelector('.drop-down_list');
+
+    postSettingsBtn.addEventListener('click', function() {
+      this.classList.toggle('open');
+    })
+  </script>
+</body>
+
+</html>
