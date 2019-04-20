@@ -16,7 +16,10 @@
   <meta charset="utf-8">
   <title>CKEditor</title>
   <script src="./js/ckeditor/ckeditor.js"></script>
-
+  
+  <!-- Fontawesome Style Sheet -->
+  <link rel="stylesheet" href="css/all.css">
+  
   <!-- Style Sheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/main.css">
@@ -60,13 +63,13 @@
   </div>
 
   <div class="side_bar">
-    <li class="drop-down"><p>Post settings</p>
+  <li class="drop-down open"><p> <i class="fa fa-sort-down"></i>&nbsp;&nbsp;&nbsp;Post settings</p>
       <ul class="drop-down_list">
-        <li class="list_item">Labels</li>
-        <li class="list_item">Schedule</li>
-        <li class="list_item">Permalink</li>
-        <li class="list_item">Location</li>
-        <li class="list_item">Options</li>
+        <li class="list_item"><i class="fas fa-tag"></i>&nbsp;&nbsp;&nbsp;Labels</li>
+        <li class="list_item"><i class="far fa-clock"></i>&nbsp;&nbsp;&nbsp;Schedule</li>
+        <li class="list_item"><i class="fas fa-link"></i>&nbsp;&nbsp;&nbsp;Permalink</li>
+        <li class="list_item"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;Location</li>
+        <li class="list_item"><i class="fas fa-tools"></i>&nbsp;&nbsp;&nbsp;Options</li>
       </ul>
     </li>
   </div>
@@ -78,6 +81,7 @@
 
 
   <script>
+    CKEDITOR.config.height='calc(100vh - 320px)';
     CKEDITOR.replace('editor1', {
       skin: 'moono-lisa,/js/ckeditor/skins/moono-lisa/'
     });
