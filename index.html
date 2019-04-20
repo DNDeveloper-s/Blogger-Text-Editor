@@ -86,11 +86,14 @@
       skin: 'moono-lisa,/js/ckeditor/skins/moono-lisa/'
     });
 
-    const postSettingsBtn = document.querySelector('.drop-down');
+
+    const postSettingsElement = document.querySelector('.drop-down');
+
+    const postSettingsBtn = document.querySelector('.drop-down > p');
     const postSettingsList = document.querySelector('.drop-down_list');
 
     postSettingsBtn.addEventListener('click', function() {
-      this.classList.toggle('open');
+      postSettingsElement.classList.toggle('open');
     })
   </script>
 </body>
